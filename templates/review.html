@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Template Name: Cooban
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+	<title>Class Enhanced</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="wrapper bgded overlay" style="background-image:url('/static/images/demo/backgrounds/background.jpg');"> 
+  <div class="row1">
+    <header id="header" class="hoc clear"> 
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Class Enhanced</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Strona główna</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  
+<!-- End Top Background Image Wrapper -->
+
+<div class="wrapper row3">
+	<div style="padding: 50px;">
+		<form action="/save-review/abc/analiza" method="post">
+			<table style="width: 50%;">
+				<tr>
+					<td></td>
+					<td>Czy był problem w zrozumieniu zagadnienia?</td>
+				</tr>
+				{% for id, name in concepts %}
+					<tr>
+						<td>{{name}}</td>
+						<td><input type="checkbox" name="checkbox{{id}}"/></td>
+					</tr>
+				{% endfor %}
+			</table>
+			<div>
+				<h3>Podsumowanie</h3>
+				<div>Oceń zajęcia w skali 1-5: <input type="number" min="1" max="5" name="rating" onkeydown="return false"/></div>
+				<div>Spostrzeżenia:</div>
+				<div><textarea rows="4" cols="50" name="comments"></textarea></div>
+				<div><input type="submit" value="Zapisz"/></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2017 - Wszelkie prawa zastrzeżone</p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="/static/layout/scripts/jquery.min.js"></script>
+<script src="/static/layout/scripts/jquery.backtotop.js"></script>
+<script src="/static/layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="/static/layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>

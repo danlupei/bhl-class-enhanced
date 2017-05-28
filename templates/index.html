@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Template Name: Cooban
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+	<title>Class Enhanced</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="google-signin-client_id" content="174437034261-95crilv4eilubduue22gdg8u81obd1ku.apps.googleusercontent.com">
+	<link href="/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!--<script src="/static/layout/scripts/script.js"></script>-->
+	<script>
+		function showPrompt()
+		{
+			document.getElementById("pinPrompt").innerHTML =
+			"<input type=\"password\" name=\"pin\"/>";
+			
+			document.getElementById("submitBtn").innerHTML =
+			"<input type=\"submit\" value=\"OK\"/>";
+		}
+	</script>
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="wrapper bgded overlay" style="background-image:url('/static/images/demo/backgrounds/background.jpg');"> 
+  <div class="row1">
+    <header id="header" class="hoc clear"> 
+      <div id="logo" class="fl_left">
+        <h2><a href="index.html">Class Enhanced</a></h2>
+      </div>
+      <nav id="mainav" class="fl_right">
+		<ul class="clear" id="authUserContent">
+			 <li class="active"><a href="/">Strona główna</a></li>
+		</ul>
+      </nav>
+    </header>
+  </div>
+
+  
+  <div id="pageintro" class="hoc clear"> 
+    <article class="introtxt">
+      <h2 class="heading">Oceniaj zajęcia i pozwól na ich ulepszenie</h2>
+      <p>Zaznacz który z tematów poruszanych na zajęciach okazał się niezrozumiały i daj o tym znać prowadzącemu. Pod koniec zajęć oceń je i dodaj sugestie. Prowadzący na biężąco lub po skończeniu zajęć sprawdzi na które zagadnienia powinien zwrócić w przyszłości większą uwagę.</p>
+    </article>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <article class="one_third first">
+      <header>
+        <h2 class="font-x2">Zaczynamy</h2>
+      </header>
+      <p class="btmspace-30">Wybierz jedną z opcji dostępnych obok&hellip;</p>
+    </article>
+    <div class="two_third">
+      <ul class="nospace group services">
+        <li class="one_half first btmspace-30">
+		  <img src="/static/images/students-cap.png" style="padding: 10px; position:absolute;">
+          <article>
+            <h6 class="heading">Jestem studentem</h6>
+            <p>Podaj PIN podany przez prowadzącego i zacznij oceniać zajęcia</p>
+            <footer><a href="javascript:showPrompt();">Podaj PIN &raquo;</a></footer>
+			<form action="/show-class/abc/analiza" method="post">
+				<p id="pinPrompt"></p>
+				<p id="submitBtn"></p>
+			</form>
+          </article>
+        </li>
+        <li class="one_half btmspace-30">
+		  <img src="/static/images/classroom.png" style="padding: 10px; position:absolute;">
+          <article>
+            <h6 class="heading">Jestem prowadzącym</h6>
+            <p>Zaloguj się i stwórz konspekt, na podstawie którego Twoje zajęcia będą oceniane</p>
+            <footer><a href="/show-courses">Demo &raquo;</a></footer>
+			<p></p>
+			<p></p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2017 - Wszelkie prawa zastrzeżone</p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="/static/layout/scripts/jquery.min.js"></script>
+<script src="/static/layout/scripts/jquery.backtotop.js"></script>
+<script src="/static/layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="/static/layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>

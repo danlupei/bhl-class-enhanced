@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classroom Enhanced</title>
+</head>
+<body>
+
+<ul>
+{% for class in classes %}
+  <li>{{class}}</li>
+{% endfor %}
+</ul>
+<a href="/add-chinese">Add Chinese ;)</a><br />
+<a href="/clear-db">Clear the database</a><br />
+
+</body>
+</html>
